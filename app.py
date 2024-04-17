@@ -43,7 +43,11 @@ def process_model():
         return jsonify({"error": "Model not found"}), 404
 
     result = prediction(features, model_file_path)
-    return jsonify(result), 200
+    
+    return jsonify({
+        'Model': model_name,
+        'Result': labeling_result(result[0]),
+    }), 200
 
 
 def prediction(data, model_file_path):
@@ -51,6 +55,11 @@ def prediction(data, model_file_path):
     result = model.predict(data)
     return result
 
+def labeling_result(result):
+    if int(result) == 0:
+        return "Non-Fatal"
+    else:    
+        return "Fatal"
 
 @app.route('/')
 # ‘/’ URL is bound with welcome() function.
