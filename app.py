@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 _model_path = "models"
 _model_extesnion = "pkl"
 _model_dict = {
-    'rf': 'rf_best__model',
+    'rf': 'rf_best_model',
     'svm': 'SVM_best_model',
     'naive': 'naivebayes_trained_model',
     'logistic': 'best_logistic_regression_model',
