@@ -45,8 +45,8 @@ def process_model():
     result = prediction(features, model_file_path)
     
     return jsonify({
-        'Model': model_name,
-        'Result': labeling_result(result[0]),
+        'model': model_name,
+        'result': labeling_result(result[0]),
     }), 200
 
 
