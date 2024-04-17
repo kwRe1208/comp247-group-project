@@ -4,6 +4,8 @@ import os.path
 import joblib
 from flask import Flask, request, jsonify
 import pandas as pd
+import warnings
+warnings.filterwarnings("ignore")
 
 _model_path = "models"
 _model_extesnion = "pkl"
