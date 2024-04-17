@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorical Values Selection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Select Categorical Values</h1>
+    <form id="categoryForm">
+      <!-- Dropdown for ROAD_CLASS -->
+      <label for="road_class">ROAD CLASS:</label>
+      <select id="road_class" name="road_class">
+        <option value="Major Arterial">Major Arterial</option>
+        <option value="Local">Local</option>
+        <option value="Minor Arterial">Minor Arterial</option>
+        <option value="Collector">Collector</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <!-- Dropdown for DISTRICT -->
+      <label for="district">DISTRICT:</label>
+      <select id="district" name="district">
+        <option value="Toronto and East York">Toronto and East York</option>
+        <option value="Scarborough">Scarborough</option>
+        <option value="Etobicoke York">Etobicoke York</option>
+        <option value="North York">North York</option>
+        <option value="Toronto East York">Toronto East York</option></select
+      ><br /><br />
+
+      <!-- Input for LATITUDE -->
+      <label for="latitude">LATITUDE:</label>
+      <input type="text" id="latitude" name="latitude" /><br /><br />
+
+      <!-- Input for LONGITUDE -->
+      <label for="longitude">LONGITUDE:</label>
+      <input type="text" id="longitude" name="longitude" /><br /><br />
+
+      <!-- Dropdown for ACCLOC -->
+      <label for="accloc">ACCLOC:</label>
+      <select id="accloc" name="accloc">
+        <option value="At Intersection">At Intersection</option>
+        <option value="Other">Other</option>
+        <option value="Non Intersection">Non Intersection</option></select
+      ><br /><br />
+
+      <!-- Dropdown for TRAFFCTL -->
+      <label for="traffctl">TRAFFCTL:</label>
+      <select id="traffctl" name="traffctl">
+        <option value="Traffic Signal">Traffic Signal</option>
+        <option value="No Control">No Control</option>
+        <option value="Stop Sign">Stop Sign</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <!-- Dropdown for VISIBILITY -->
+      <label for="visibility">VISIBILITY:</label>
+      <select id="visibility" name="visibility">
+        <option value="Clear">Clear</option>
+        <option value="Not Clear">Not Clear</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <!-- Dropdown for LIGHT -->
+      <label for="light">LIGHT:</label>
+      <select id="light" name="light">
+        <option value="Daylight">Daylight</option>
+        <option value="Dark">Dark</option>
+        <option value="Dusk">Dusk</option>
+        <option value="Dawn">Dawn</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <!-- Dropdown for RDSFCOND -->
+      <label for="rdsfcond">RDSFCOND:</label>
+      <select id="rdsfcond" name="rdsfcond">
+        <option value="Dry">Dry</option>
+        <option value="Wet">Wet</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <!-- Dropdown for INVTYPE -->
+      <label for="invtype">INVTYPE:</label>
+      <select id="invtype" name="invtype">
+        <option value="Driver">Driver</option>
+        <option value="Pedestrian">Pedestrian</option>
+        <option value="Passenger">Passenger</option>
+        <option value="Vehicle Owner">Vehicle Owner</option>
+        <option value="Cyclist">Cyclist</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <!-- Dropdown for INVAGE -->
+      <label for="invage">INVAGE:</label>
+      <select id="invage" name="invage">
+        <option value="unknown">Unknown</option>
+        <option value="60 to 79">60 to 79</option>
+        <option value="40 to 59">40 to 59</option>
+        <option value="20 to 39">20 to 39</option>
+        <option value="0 to 19">0 to 19</option>
+        <option value="over 79">Over 79</option></select
+      ><br /><br />
+
+      <!-- Dropdown for INJURY -->
+      <label for="injury">INJURY:</label>
+      <select id="injury" name="injury">
+        <option value="None">None</option>
+        <option value="Fatal">Fatal</option>
+        <option value="Major">Major</option>
+        <option value="Minor">Minor</option>
+        <option value="No">No</option>
+        <option value="Minimal">Minimal</option></select
+      ><br /><br />
+
+      <!-- Dropdown for PEDESTRIAN -->
+      <label for="pedestrian">PEDESTRIAN:</label>
+      <select id="pedestrian" name="pedestrian">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option></select
+      ><br /><br />
+
+      <!-- Dropdown for CYCLIST -->
+      <label for="cyclist">CYCLIST:</label>
+      <select id="cyclist" name="cyclist">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for AUTOMOBILE -->
+      <label for="automobile">AUTOMOBILE:</label>
+      <select id="automobile" name="automobile">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option></select
+      ><br /><br />
+
+      <!-- Dropdown for MOTORCYCLE -->
+      <label for="motorcycle">MOTORCYCLE:</label>
+      <select id="motorcycle" name="motorcycle">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for TRUCK -->
+      <label for="truck">TRUCK:</label>
+      <select id="truck" name="truck">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for TRSN_CITY_VEH -->
+      <label for="trsn_city_veh">TRANSIT/CITY VEHICLE:</label>
+      <select id="trsn_city_veh" name="trsn_city_veh">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for EMERG_VEH -->
+      <label for="emerg_veh">EMERGENCY VEHICLE:</label>
+      <select id="emerg_veh" name="emerg_veh">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for PASSENGER -->
+      <label for="passenger">PASSENGER:</label>
+      <select id="passenger" name="passenger">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for SPEEDING -->
+      <label for="speeding">SPEEDING:</label>
+      <select id="speeding" name="speeding">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for AG_DRIV -->
+      <label for="ag_driv">AGGRESSIVE DRIVING:</label>
+      <select id="ag_driv" name="ag_driv">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for REDLIGHT -->
+      <label for="redlight">REDLIGHT VIOLATION:</label>
+      <select id="redlight" name="redlight">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for ALCOHOL -->
+      <label for="alcohol">ALCOHOL INVOLVEMENT:</label>
+      <select id="alcohol" name="alcohol">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Dropdown for DISABILITY -->
+      <label for="disability">DISABILITY:</label>
+      <select id="disability" name="disability">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option></select
+      ><br /><br />
+
+      <!-- Input for HOOD_158 -->
+      <label for="hood_158">HOOD_158:</label>
+      <input type="text" id="hood_158" name="hood_158" /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
